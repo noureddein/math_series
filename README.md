@@ -4,3 +4,5 @@
 - The functions written using two methods:
   - Recursive method.
   - Iteration method.
+
+[Lab-02 PR](https://github.com/noureddein/math_series/pull/1)
