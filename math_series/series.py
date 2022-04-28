@@ -1,6 +1,8 @@
-
 # Fibonacci and Lucas functions using 1 argument and recursive method
-def lucas(n):
+from mimetypes import init
+
+
+def lucas(n) -> int:
     """
         The Lucas Numbers are a related series of integers that start with the values 2 and 1, each number is the sum of the two previous numbers. The resulting series looks like this:
             # 2, 1, 3, 4, 7, 11, 18, 29, ...
@@ -21,7 +23,7 @@ def lucas(n):
     return lucas(n-1) + lucas(n-2)
 
 
-def fibonacci(n):
+def fibonacci(n) -> int:
     """
         The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series, the next integer is determined by summing the previous two.The series looks like this:
             # 0, 1, 1, 2, 3, 5, 8, 13, ...
@@ -41,7 +43,7 @@ def fibonacci(n):
 
 
 # Fibonacci and Lucas functions using 1 argument and iteration method
-def fib_iterate(n):
+def fib_iterate(n) -> int:
     """
 
         The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series, the next integer is determined by summing the previous two.The series looks like this:
@@ -73,7 +75,7 @@ def fib_iterate(n):
     return total
 
 
-def lucas_iterate(n):
+def lucas_iterate(n) -> int:
     """
         The Lucas Numbers are a related series of integers that start with the values 2 and 1, each number is the sum of the two previous numbers. The resulting series looks like this:
             # 2, 1, 3, 4, 7, 11, 18, 29, ...
@@ -105,7 +107,7 @@ def lucas_iterate(n):
 
 
 # Fibonacci and Lucas functions using 1 required argument and 2 defult arguments with recursive method
-def fibonacci_lucas(n, base_0, base_1):
+def fibonacci_lucas(n, base_0, base_1) -> int:
     """
         This function is a dynamic function to generate any series based on the starting arguments, you can use it to generate series like Fibonacci or Lucas.
 
@@ -126,7 +128,7 @@ def fibonacci_lucas(n, base_0, base_1):
 
 
 # Fibonacci and Lucas functions using 1 required argument and 2 defult arguments with iteration method
-def fibonacci_lucas_iterate(n, base_0, base_1):
+def fibonacci_lucas_iterate(n, base_0, base_1) -> int:
     """
         This function is a dynamic function to generate any series based on the starting arguments, you can use it to generate series like Fibonacci or Lucas.
 
@@ -157,7 +159,7 @@ def fibonacci_lucas_iterate(n, base_0, base_1):
     return total
 
 
-def sum_series(n, def_1=0, def_2=1):
+def sum_series(n, def_1=0, def_2=1) -> int:
     return fibonacci_lucas(n, def_1, def_2)
 
 
