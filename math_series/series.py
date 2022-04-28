@@ -21,7 +21,7 @@ def lucas(n) -> int:
     if n == 1:
         return 1
 
-    return lucas(n-1) + lucas(n-2)
+    return lucas(n - 1) + lucas(n - 2)
 
 
 def fibonacci(n) -> int:
@@ -40,7 +40,7 @@ def fibonacci(n) -> int:
     if n == 1:
         return 1
 
-    return fibonacci(n-1) + fibonacci(n-2)
+    return fibonacci(n - 1) + fibonacci(n - 2)
 
 
 # Fibonacci and Lucas functions using 1 argument and iteration method
@@ -107,7 +107,8 @@ def lucas_iterate(n) -> int:
     return total
 
 
-# Fibonacci and Lucas functions using 1 required argument and 2 defult arguments with recursive method
+# Fibonacci and Lucas functions using 1 required argument and 2 defult
+# arguments with recursive method
 def fibonacci_lucas(n, base_0, base_1) -> int:
     """
         This function is a dynamic function to generate any series based on the starting arguments, you can use it to generate series like Fibonacci or Lucas.
@@ -125,10 +126,12 @@ def fibonacci_lucas(n, base_0, base_1) -> int:
     if n == 1:
         return base_1
 
-    return fibonacci_lucas(n-1, base_0, base_1) + fibonacci_lucas(n-2, base_0, base_1)
+    return fibonacci_lucas(n - 1, base_0, base_1) + \
+        fibonacci_lucas(n - 2, base_0, base_1)
 
 
-# Fibonacci and Lucas functions using 1 required argument and 2 defult arguments with iteration method
+# Fibonacci and Lucas functions using 1 required argument and 2 defult
+# arguments with iteration method
 def fibonacci_lucas_iterate(n, base_0, base_1) -> int:
     """
         This function is a dynamic function to generate any series based on the starting arguments, you can use it to generate series like Fibonacci or Lucas.
