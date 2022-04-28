@@ -2,7 +2,7 @@
 from mimetypes import init
 
 
-def lucas(n) -> int:
+def lucas(n)-> int:
     """
         The Lucas Numbers are a related series of integers that start with the values 2 and 1, each number is the sum of the two previous numbers. The resulting series looks like this:
             # 2, 1, 3, 4, 7, 11, 18, 29, ...
@@ -22,8 +22,6 @@ def lucas(n) -> int:
         return 1
 
     return lucas(n-1) + lucas(n-2)
-
-
 def fibonacci(n) -> int:
     """
         The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series, the next integer is determined by summing the previous two.The series looks like this:
