@@ -14,6 +14,7 @@ def lucas(n) -> int:
         Output:
             Return the nth value of Lucas Series.
     """
+
     if n == 0:
         return 2
 
